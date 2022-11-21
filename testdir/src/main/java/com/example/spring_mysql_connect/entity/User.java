@@ -14,12 +14,15 @@ public class User {
     private Long id;
 
     @Column
-    private String username;
+    public String username;
 
     @Column
-    private String password;
+    public String password;
 
     public User() {
+        this.id = null;
+        this.username = "";
+        this.password = "";
     }
 
     public User(Long id, String username, String password) {
